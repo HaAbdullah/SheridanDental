@@ -1,4 +1,3 @@
-import Button from "./Button";
 import { NavLink } from "react-router-dom";
 import "../../styles/components/BookingBanner.css";
 
