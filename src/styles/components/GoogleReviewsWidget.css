@@ -1,0 +1,87 @@
+/* =========================================================
+   GoogleReviewsWidget.css — Option B (no API key)
+   ========================================================= */
+
+.gr-widget {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-card);
+}
+
+.gr-widget__rating-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* Large numeric score */
+.gr-widget__score {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.gr-widget__rating-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+/* Star row */
+.gr-widget__stars {
+  display: flex;
+  gap: 1px;
+}
+
+.gr-widget__star {
+  font-size: var(--text-lg);
+  color: var(--color-border-strong);
+}
+
+.gr-widget__star--full {
+  color: #f5a623;
+}
+
+.gr-widget__star--half {
+  color: #f5a623;
+  opacity: 0.6;
+}
+
+.gr-widget__count {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+/* Google "G" brand mark — stylized letter, no logo asset needed */
+.gr-widget__google-g {
+  margin-left: auto;
+  font-family: var(--font-body);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: #4285f4;
+  flex-shrink: 0;
+}
+
+/* CTA link */
+.gr-widget__cta {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+  align-self: flex-start;
+}
+
+.gr-widget__cta:hover {
+  color: var(--color-primary-hover);
+}

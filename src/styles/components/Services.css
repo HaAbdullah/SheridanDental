@@ -1,0 +1,171 @@
+/* =========================================================
+   Services Page — Services.css
+   ========================================================= */
+
+/* ---------- Page shell ---------- */
+.services-page {
+  background-color: var(--color-bg);
+}
+
+/* ---------- Header ---------- */
+.services-page__header {
+  background-color: var(--color-bg);
+  padding: var(--space-24) 0 var(--space-12);
+}
+
+/* ---------- Banner image ---------- */
+.services-page__banner {
+  width: 100%;
+  overflow: hidden;
+  max-height: 420px;
+}
+
+.services-page__banner-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+
+/* ---------- Intro prose ---------- */
+.services-page__intro {
+  background-color: var(--color-surface-alt);
+  padding: var(--space-16) 0;
+}
+
+.services-page__intro-inner {
+  max-width: var(--max-width-text);
+}
+
+.services-page__intro-text {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+/* ---------- Grid section ---------- */
+.services-page__grid-section {
+  background-color: var(--color-bg);
+  padding: var(--space-16) 0 var(--space-24);
+}
+
+.services-page__grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+/* ---------- Individual card ---------- */
+.services-page__card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.services-page__card:hover {
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-2px);
+}
+
+.services-page__card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.services-page__card-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.services-page__card-desc {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.services-page__card-link {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  align-self: flex-start;
+  transition: color var(--transition-fast);
+}
+
+.services-page__card-link:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ---------- Closing section ---------- */
+.services-page__closing {
+  background-color: var(--color-surface-alt);
+  padding: var(--space-16) 0;
+  text-align: center;
+}
+
+.services-page__closing-text {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: var(--max-width-text);
+  margin: 0 auto var(--space-6);
+  line-height: 1.7;
+}
+
+.services-page__closing-link {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-strong);
+  text-underline-offset: var(--space-1);
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+.services-page__closing-link:hover {
+  color: var(--color-primary-hover);
+  text-decoration-color: var(--color-primary-hover);
+}
+
+.services-page__closing-phone {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.services-page__closing-phone:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .services-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page__banner-img {
+    height: 240px;
+  }
+}

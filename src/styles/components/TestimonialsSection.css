@@ -1,0 +1,59 @@
+/* =========================================================
+   TestimonialsSection.css
+   ========================================================= */
+
+.testimonials-section {
+  background-color: var(--color-surface-alt);
+  padding: var(--space-24) 0;
+}
+
+.testimonials-section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.testimonials-section__header {
+  text-align: center;
+}
+
+.testimonials-section__grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.testimonials-section__footer {
+  text-align: center;
+}
+
+.testimonials-section__google-link {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.testimonials-section__google-link:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .testimonials-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-section__grid {
+    grid-template-columns: 1fr;
+  }
+}
